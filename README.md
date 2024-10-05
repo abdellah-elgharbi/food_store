@@ -1,4 +1,4 @@
-Voici un exemple de fichier **README** pour votre projet Android de recettes de pizza avec ajout de catégories de repas comme les burgers, les pâtes, etc.
+
 
 ---
 
