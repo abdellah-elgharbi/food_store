@@ -69,3 +69,7 @@ Ce projet est sous licence [MIT](LICENSE).
 ---
 
 Vous pouvez adapter ce fichier **README** selon les spécificités de votre projet et les futures évolutions.
+
+
+
+https://github.com/user-attachments/assets/02f59c6c-8e20-4a3d-8bd7-7a5a47612620
