@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@color/blue">
+
+    <!-- ScrollView for the ImageView -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/red"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            app:srcCompat="@drawable/fleches" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:text="Pizza recipes"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="16dp"
+
+            />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            app:srcCompat="@drawable/share"
+            android:layout_marginLeft="50dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <!-- LinearLayout for buttons at the bottom -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="384dp"
+        android:layout_height="411dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/food_image"
+                android:layout_width="355dp"
+                android:layout_height="204dp"
+                app:srcCompat="@drawable/burger" />
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/allan"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/descriptionTitle"
+                android:layout_width="364dp"
+                android:layout_height="41dp"
+                android:fontFamily="@font/allan"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="364dp"
+                android:layout_height="200dp"
+                android:background="@drawable/backgroud_text"
+                android:fontFamily="@font/allan"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+
+                />
+
+            <TextView
+                android:id="@+id/ingredinat"
+                android:layout_width="340dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/allan"
+                android:text="Ingrediant"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/ingrediant_des"
+                android:layout_width="357dp"
+                android:layout_height="158dp"
+                android:background="@drawable/backgroud_text"
+                android:fontFamily="@font/allan"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="407dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="128dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_mois"
+            android:text="-"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/back_canfirm"
+            android:text="Order"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp"
+            android:background="@drawable/back_plus"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
